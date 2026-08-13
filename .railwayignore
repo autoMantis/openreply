@@ -1,0 +1,9 @@
+# Never ship local secrets into a build context. Railway injects real values
+# as service variables; a .env in the image is pure downside.
+.env
+.env.*
+!.env.example
+
+node_modules
+.next
+.git
